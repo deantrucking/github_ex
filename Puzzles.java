@@ -2,6 +2,21 @@
 
 public class Puzzles {
 
+    /**==================SUM~28==============/
+     * Problem statement:
+         * Given an array of ints, return true if every element is a 1 or a 4.
+     * Example input -> output:
+         * only14([1, 4, 1, 4]) → true
+         * only14([1, 4, 2, 4]) → false
+         * only14([1, 1]) → true
+     */
+    public static boolean only14(int[] input) {
+        for (int i = 0 ; i < input.size; i++){
+				if (input[i] != 4 && input[i] != 1)
+					return false;
+			}
+			return true;
+		}
 
 
 	/**
