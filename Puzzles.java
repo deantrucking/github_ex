@@ -34,9 +34,12 @@ F or each of the below method signatures, finish implementing the method
          * only14([1, 1]) → true
      */
     public static boolean only14(int[] input) {
-        //TODO
-        return false;
-    }
+        for (int i = 0 ; i < input.size; i++){
+				if (input[i] != 4 && input[i] != 1)
+					return false;
+			}
+			return true;
+		}
 
     public static void main (String[] args) {
         {
